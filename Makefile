@@ -10,6 +10,7 @@ lint:
 
 deploy:
 	echo "Deploying app"
+	export AWS_DEFAULT_REGION=us-east-1
 	eb deploy flask-continuous-delivery-env --region us-east-1
 
 all: install lint test 
